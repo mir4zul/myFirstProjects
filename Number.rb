@@ -29,9 +29,10 @@ MaxInt = Float::INFINITY  # Represents an infinitely large number
 MinInt = -Float::INFINITY  # Represents an infinitely small (negative) number
 NotANumber = Float::NAN  # Represents a value that is "not a number
 
-puts "power: #{Power}"
-puts "remainder: #{remainder}"
-puts "Hexadecimal: #{HexNum}"
-puts "MaxInt: #{MaxInt}"
-puts "MinInt: #{MinInt}"
-puts "NotANumber: #{NotANumber}"
+AbsoluteValue = -42 # Absolute value of -42
+SquareRoot = 16.sqrt  # Square root of 16
+Ceiling = 4.3.ceil  # Smallest integer greater than or equal to 4.3
+FloorValue = 4.7.floor  # Largest integer less than or equal to 4.7
+RoundValue = 4.5.round  # Rounds to
+
+puts AbsoluteValue.abs
