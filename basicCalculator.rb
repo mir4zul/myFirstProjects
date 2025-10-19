@@ -23,4 +23,4 @@ result = case operation
            "Invalid operation"
          end
 
-puts "The result is: #{result}"
+puts "The result is: #{result.round}"
