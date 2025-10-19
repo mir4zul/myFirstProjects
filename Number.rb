@@ -21,7 +21,7 @@ SciNum = 1.5e3  # 1.5 * 10^3 = 1500.0
 ReadableNum = 1_000_000
 
 Power = 2**3  # 2 raised to the power of 3
-remainder = 10 % 3  # Remainder of 10 divided by 3
+Remainder = 10 % 3  # Remainder of 10 divided by 3
 HexNum = 0x1A  # Hexadecimal representation (26 in decimal)
 OctNum = 0o32  # Octal representation (26 in decimal)
 BinNum = 0b11010  # Binary representation (26 in decimal)
@@ -30,9 +30,10 @@ MinInt = -Float::INFINITY  # Represents an infinitely small (negative) number
 NotANumber = Float::NAN  # Represents a value that is "not a number
 
 AbsoluteValue = -42 # Absolute value of -42
-SquareRoot = 16.sqrt  # Square root of 16
 Ceiling = 4.3.ceil  # Smallest integer greater than or equal to 4.3
-FloorValue = 4.7.floor  # Largest integer less than or equal to 4.7
-RoundValue = 4.5.round  # Rounds to
+FloorValue = 4.7.floor  # Largest integer less than or equal to 4.7 answer is 4
+RoundValue = 4.5.round  # Rounds to the nearest integer answer is 5
+SqrtNumber = Math.sqrt(16)  # Square root of 16 answer is 4.0
 
-puts AbsoluteValue.abs
+NumFlt  = 10 / 7.0 #Make one operand a float for floating-point division
+NumInt  = 10 / 7  #Integer division
