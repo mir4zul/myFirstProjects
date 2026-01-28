@@ -1,17 +1,21 @@
 class Book
   attr_accessor :title, :author, :pages
+  def initialize(title, author, pages)
+    @title = title
+    @author = author
+    @pages = pages
+  end
+
+  def summary
+    "#{title} by #{author}, #{pages} pages"
+  end
+
+  def read
+    "You are reading #{title} by #{author}"
+  end
 end
 
-book = Book.new
-book.title = "1984"
-book.author = "George Orwell"
-book.pages = 328
+book1 = Book.new("Mike", "aut", 200)
 
-book1 = Book.new
-book1.title = "The Great Gatsby"
-book1.author = "F. Scott Fitzgerald"
-book1.pages = 218
-
-puts book.title
-puts book1.title
-
+puts book1.summary
+puts book1.read
